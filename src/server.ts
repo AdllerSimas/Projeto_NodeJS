@@ -7,9 +7,9 @@ import "./database";
 import "@shared/container";
 
 // eslint-disable-next-line import-helpers/order-imports
-import { AppError } from "@errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 
-import { router } from "./routes";
+import { router } from "./shared/infra/http/routes";
 import swaggerFile from "./swagger.json";
 
 const app = express();
