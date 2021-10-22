@@ -8,9 +8,10 @@ services:
     restart: always
     ports: 
       - 5432:5432
+      - 9229:9229
     environment:
       - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=adller
+      - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=rentx 
     volumes: 
       - pgdata:/data/postgres
