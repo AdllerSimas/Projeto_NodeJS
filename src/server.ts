@@ -4,10 +4,10 @@ import swaggerUi from "swagger-ui-express";
 
 import "reflect-metadata";
 
-import "@shared/container";
+import "./shared/container";
 
 // eslint-disable-next-line import-helpers/order-imports
-import { AppError } from "@shared/errors/AppError";
+import { AppError } from "./shared/errors/AppError";
 
 import { router } from "./shared/infra/http/routes";
 import swaggerFile from "./swagger.json";

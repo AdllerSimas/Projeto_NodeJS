@@ -3,13 +3,17 @@
     "port": 5432,
     "host": "localhost",
     "username": "docker",
-    "password": "adller",
+    "password": "docker",
     "database": "rentx",
+
+    "entities": [
+        "./src/modules/**/infra/typeorm/entities/*.ts"
+     ],
+
     "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+    
     "cli": {
         "migrationsDir": "./src/shared/infra/typeorm/migrations"
-    },
-    "entities": [
-        "./src/modules/**/entities/**/*{.ts,.js}"
-     ]
+    }
+    
 }

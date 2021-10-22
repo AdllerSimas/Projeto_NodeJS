@@ -1,6 +1,5 @@
-import { ICreateCarDTO } from "@modules/cars/dtos/ICreateCarDTO";
-import { Car } from "@modules/cars/infra/typeorm/entities/Cars";
-
+import { ICreateCarDTO } from "../../dtos/ICreateCarDTO";
+import { Car } from "../../infra/typeorm/entities/Cars";
 import { ICarsRepository } from "../ICarsRepository";
 
 class CarsReposiotryInMemory implements ICarsRepository {
